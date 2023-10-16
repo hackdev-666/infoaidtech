@@ -1,4 +1,8 @@
 from random import *
+print("WELCOME TO THE NUMBER GUESSING GAME \n")
+name=input("Enter your name: ")
+print("\n")
+print("Hello",name,",")
 def number_guessing_game():
     while True:
         num=randint(0, 100)
@@ -6,6 +10,7 @@ def number_guessing_game():
         m=10
         print("I'm thinking of a number between 0 and 100. Try to guess it....")
         print(f"You have {m} attempts.")
+        print("Let's start.....")
         while a<m:
             try:
                 guess=int(input("Enter your guess: "))
@@ -24,8 +29,8 @@ def number_guessing_game():
         play_again = input("Do you want to play again? (yes/no): ")
         if play_again.lower()!="yes":
             break
-if __name__ == "__main__":
-    number_guessing_game()
+number_guessing_game()
+
 
  
 
